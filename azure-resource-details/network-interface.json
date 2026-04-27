@@ -1,0 +1,28 @@
+{
+    "apiVersion": "2025-05-01",
+    "id": "/subscriptions/110d8e13-3505-41c3-92cd-7927faa4de6b/resourceGroups/load-balancer-rg/providers/Microsoft.Network/networkInterfaces/lb-vm1819_z1",
+    "name": "lb-vm1819_z1",
+    "type": "microsoft.network/networkinterfaces",
+    "location": "canadacentral",
+    "properties": {
+        "ipConfigurations": [
+            {
+                "name": "ipconfig1",
+                "properties": {
+                    "privateIPAddress": "10.0.0.4",
+                    "subnet": {
+                        "id": "/subscriptions/110d8e13-3505-41c3-92cd-7927faa4de6b/resourceGroups/load-balancer-rg/providers/Microsoft.Network/virtualNetworks/lb-vnet/subnets/backend-subnet"
+                    },
+                    "loadBalancerBackendAddressPools": [
+                        {
+                            "id": "/subscriptions/110d8e13-3505-41c3-92cd-7927faa4de6b/resourceGroups/load-balancer-rg/providers/Microsoft.Network/loadBalancers/load-balancer/backendAddressPools/lb-backend-pool"
+                        }
+                    ]
+                }
+            }
+        ],
+        "networkSecurityGroup": {
+            "id": "/subscriptions/110d8e13-3505-41c3-92cd-7927faa4de6b/resourceGroups/load-balancer-rg/providers/Microsoft.Network/networkSecurityGroups/lb-NSG"
+        }
+    }
+}
