@@ -1,0 +1,38 @@
+{
+    "apiVersion": "2025-05-01",
+    "id": "/subscriptions/110d8e13-3505-41c3-92cd-7927faa4de6b/resourceGroups/load-balancer-rg/providers/Microsoft.Network/networkSecurityGroups/lb-NSG",
+    "name": "lb-NSG",
+    "type": "microsoft.network/networksecuritygroups",
+    "location": "canadacentral",
+    "properties": {
+        "securityRules": [
+            {
+                "name": "lb-NSG-Rule",
+                "properties": {
+                    "protocol": "TCP",
+                    "sourcePortRange": "*",
+                    "destinationPortRange": "80",
+                    "sourceAddressPrefix": "*",
+                    "destinationAddressPrefix": "*",
+                    "access": "Allow",
+                    "priority": 100,
+                    "direction": "Inbound"
+                }
+            },
+            {
+                "name": "default-allow-rdp",
+                "properties": {
+                    "protocol": "TCP",
+                    "sourcePortRange": "*",
+                    "destinationPortRange": "3389",
+                    "sourceAddressPrefix": "*",
+                    "destinationAddressPrefix": "*",
+                    "access": "Allow",
+                    "priority": 1000,
+                    "direction": "Inbound"
+                }
+            }
+        ],
+        "provisioningState": "Succeeded"
+    }
+}
