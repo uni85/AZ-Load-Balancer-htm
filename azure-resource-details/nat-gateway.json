@@ -1,0 +1,24 @@
+{
+    "apiVersion": "2025-05-01",
+    "id": "/subscriptions/110d8e13-3505-41c3-92cd-7927faa4de6b/resourceGroups/load-balancer-rg/providers/Microsoft.Network/natGateways/lb-nat-gateway",
+    "name": "lb-nat-gateway",
+    "type": "microsoft.network/natgateways",
+    "sku": {
+        "name": "Standard"
+    },
+    "location": "canadacentral",
+    "properties": {
+        "idleTimeoutInMinutes": 15,
+        "publicIpAddresses": [
+            {
+                "id": "/subscriptions/110d8e13-3505-41c3-92cd-7927faa4de6b/resourceGroups/load-balancer-rg/providers/Microsoft.Network/publicIPAddresses/nat-gw-public-ip"
+            }
+        ],
+        "subnets": [
+            {
+                "id": "/subscriptions/110d8e13-3505-41c3-92cd-7927faa4de6b/resourceGroups/load-balancer-rg/providers/Microsoft.Network/virtualNetworks/lb-vnet/subnets/backend-subnet"
+            }
+        ],
+        "provisioningState": "Succeeded"
+    }
+}
