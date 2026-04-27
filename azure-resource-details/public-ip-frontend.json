@@ -1,0 +1,17 @@
+{
+    "apiVersion": "2025-05-01",
+    "id": "/subscriptions/110d8e13-3505-41c3-92cd-7927faa4de6b/resourceGroups/load-balancer-rg/providers/Microsoft.Network/publicIPAddresses/lb-frontend-ip",
+    "name": "lb-frontend-ip",
+    "type": "microsoft.network/publicipaddresses",
+    "sku": {
+        "name": "Standard",
+        "tier": "Regional"
+    },
+    "location": "canadacentral",
+    "zones": [ "3", "1", "2" ],
+    "properties": {
+        "ipAddress": "20.116.143.254",
+        "publicIPAllocationMethod": "Static",
+        "provisioningState": "Succeeded"
+    }
+}
