@@ -22,6 +22,18 @@ The underlying configuration of this deployment is captured in the `/infrastruct
 ### 1. Web Server Installation
 After establishing connectivity via **Azure Bastion**, I used PowerShell to automate the IIS setup and create a unique landing page for each node to track traffic distribution.
 
+### Traffic routed to VM1:
+
+![VM1 Confirmation](images/image_d5db57.png)
+
+
+
+### Traffic routed to VM2:
+
+![VM2 Confirmation](images/image_d5db55.png)
+
+
+
 ```powershell
 # Corrected syntax for IIS Installation
 Install-WindowsFeature -Name Web-Server -IncludeManagementTools
