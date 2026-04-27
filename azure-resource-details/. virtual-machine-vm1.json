@@ -1,0 +1,41 @@
+{
+    "apiVersion": "2025-11-01",
+    "id": "/subscriptions/110d8e13-3505-41c3-92cd-7927faa4de6b/resourceGroups/load-balancer-rg/providers/Microsoft.Compute/virtualMachines/lb-VM1",
+    "name": "lb-VM1",
+    "type": "microsoft.compute/virtualmachines",
+    "location": "canadacentral",
+    "zones": [ "1" ],
+    "properties": {
+        "hardwareProfile": {
+            "vmSize": "Standard_B2ts_v2"
+        },
+        "storageProfile": {
+            "imageReference": {
+                "publisher": "MicrosoftWindowsServer",
+                "offer": "WindowsServer",
+                "sku": "2025-datacenter-azure-edition",
+                "version": "latest"
+            },
+            "osDisk": {
+                "osType": "Windows",
+                "name": "lb-VM1_OsDisk_1_677cb656ded84abfafa2e6b1fd6d6ce5",
+                "createOption": "FromImage",
+                "managedDisk": {
+                    "storageAccountType": "Premium_LRS"
+                }
+            }
+        },
+        "osProfile": {
+            "computerName": "lb-VM1",
+            "adminUsername": "azureuser"
+        },
+        "networkProfile": {
+            "networkInterfaces": [
+                {
+                    "id": "/subscriptions/110d8e13-3505-41c3-92cd-7927faa4de6b/resourceGroups/load-balancer-rg/providers/Microsoft.Network/networkInterfaces/lb-vm1819_z1"
+                }
+            ]
+        },
+        "provisioningState": "Succeeded"
+    }
+}
