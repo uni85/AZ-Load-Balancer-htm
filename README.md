@@ -1,4 +1,4 @@
-content = """# Azure High-Availability Web Architecture
+# Azure High-Availability Web Architecture
 ### Public Load Balancer & Windows Server 2025 Cluster
 
 ## 📌 Project Overview
