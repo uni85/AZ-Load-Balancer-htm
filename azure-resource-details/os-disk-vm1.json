@@ -1,0 +1,18 @@
+{
+    "apiVersion": "2025-01-02",
+    "id": "/subscriptions/110d8e13-3505-41c3-92cd-7927faa4de6b/resourceGroups/LOAD-BALANCER-RG/providers/Microsoft.Compute/disks/lb-VM1_OsDisk_1_677cb656ded84abfafa2e6b1fd6d6ce5",
+    "name": "lb-VM1_OsDisk_1_677cb656ded84abfafa2e6b1fd6d6ce5",
+    "type": "microsoft.compute/disks",
+    "sku": {
+        "name": "Premium_LRS",
+        "tier": "Premium"
+    },
+    "location": "canadacentral",
+    "zones": [ "1" ],
+    "properties": {
+        "osType": "Windows",
+        "diskSizeGB": 127,
+        "diskState": "Attached",
+        "provisioningState": "Succeeded"
+    }
+}
