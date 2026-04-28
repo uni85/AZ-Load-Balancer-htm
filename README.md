@@ -39,5 +39,5 @@ After establishing connectivity via **Azure Bastion**, I used PowerShell to auto
 Install-WindowsFeature -Name Web-Server -IncludeManagementTools
 
 # Create unique landing page
-Remove-Item C:\\inetpub\\wwwroot\\iisstart.htm
-Add-Content -Path "C:\\inetpub\\wwwroot\\iisstart.htm" -Value $("Hello Underworld from " + $env:computername)
+Remove-Item C:\inetpub\wwwroot\iisstart.htm
+Add-Content -Path "C:\inetpub\wwwroot\iisstart.htm" -Value $("Hello Underworld from " + $env:computername)
