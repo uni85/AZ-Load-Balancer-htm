@@ -1,5 +1,5 @@
 # Azure High-Availability Web Architecture
-### Public Load Balancer & Windows Server 2025 Cluster
+### Public Load Balancer & Windows Server 2025 Cluster 
 
 ## Project Overview
 This project demonstrates a production-ready, highly available infrastructure in **Azure**. I deployed a **Standard Public Load Balancer** to manage and distribute incoming web traffic across two **Windows Server 2025** virtual machines located in separate availability zones within the **Canada Central** region.
